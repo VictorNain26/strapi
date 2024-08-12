@@ -4,7 +4,8 @@
   "info": {
     "singularName": "home",
     "pluralName": "homes",
-    "displayName": "Home"
+    "displayName": "Home",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,6 +13,17 @@
   "pluginOptions": {},
   "attributes": {
     "Background": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "HeaderBackground": {
       "allowedTypes": [
         "images",
         "files",
@@ -20,6 +32,9 @@
       ],
       "type": "media",
       "multiple": false
+    },
+    "Title": {
+      "type": "string"
     }
   }
 }
