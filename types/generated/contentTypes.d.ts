@@ -800,9 +800,9 @@ export interface ApiHomeHome extends Schema.SingleType {
     draftAndPublish: true;
   };
   attributes: {
-    Background: Attribute.Media;
-    HeaderBackground: Attribute.Media;
-    Title: Attribute.String;
+    background: Attribute.Media;
+    headerbackground: Attribute.Media;
+    title: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -819,14 +819,15 @@ export interface ApiProjetProjet extends Schema.CollectionType {
     singularName: 'projet';
     pluralName: 'projets';
     displayName: 'Projet';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    Titre: Attribute.String;
-    Description: Attribute.Text;
-    Medias: Attribute.Media;
+    titre: Attribute.String;
+    description: Attribute.Text;
+    medias: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
