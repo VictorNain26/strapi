@@ -4,7 +4,7 @@
   "info": {
     "singularName": "projet",
     "pluralName": "projets",
-    "displayName": "Projet",
+    "displayName": "Project",
     "description": ""
   },
   "options": {
@@ -12,16 +12,18 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "titre": {
-      "type": "string"
+    "title": {
+      "type": "string",
+      "required": true
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "medias": {
       "type": "media",
       "multiple": true,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
